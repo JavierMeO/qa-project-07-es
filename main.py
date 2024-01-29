@@ -298,11 +298,11 @@ class TestUrbanRoutes:
         self.routes_page.click_add_2_icecream()
         assert self.routes_page.get_icecream_counter() == 2
 
-    # def test_book_a_taxi(self):
-    #     self.routes_page.click_book_a_taxi_button()
-    #     assert self.routes_page.is_wait_for_a_driver_screen_displayed()
-    #     self.routes_page.wait_for_load_order()
-    #     assert self.routes_page.is_order_screen_displayed()
+    def test_book_a_taxi(self):
+         self.routes_page.click_book_a_taxi_button()
+         assert self.routes_page.is_wait_for_a_driver_screen_displayed()
+         self.routes_page.wait_for_load_order()
+         assert self.routes_page.is_order_screen_displayed()
 
     @classmethod
     def teardown_class(cls):
