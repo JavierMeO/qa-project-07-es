@@ -245,7 +245,6 @@ class TestUrbanRoutes:
         assert self.routes_page.get_phone_number() == phone_number
         self.routes_page.click_next_button()
 
-
     #Recibe el codigo de telefono, lo envia y comprueba que no esta vacio
     def test_set_phone_code(self):
         # Establecer el código
@@ -278,7 +277,6 @@ class TestUrbanRoutes:
         assert self.routes_page.get_credit_card_code() == data.card_code
         self.routes_page.click_link_button()
 
-
     #Comprueba que se pueda añadir un comentario
     def test_set_comment(self):
         self.routes_page.set_comment(data.message_for_driver)
@@ -299,10 +297,10 @@ class TestUrbanRoutes:
         assert self.routes_page.get_icecream_counter() == 2
 
     def test_book_a_taxi(self):
-         self.routes_page.click_book_a_taxi_button()
-         assert self.routes_page.is_wait_for_a_driver_screen_displayed()
-         self.routes_page.wait_for_load_order()
-         assert self.routes_page.is_order_screen_displayed()
+        self.routes_page.click_book_a_taxi_button()
+        assert self.routes_page.is_wait_for_a_driver_screen_displayed()
+        self.routes_page.wait_for_load_order()
+        assert self.routes_page.is_order_screen_displayed()
 
     @classmethod
     def teardown_class(cls):
