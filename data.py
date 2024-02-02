@@ -1,6 +1,6 @@
-urban_routes_url = 'https://af458baa-7035-4e55-bbc4-ac574dd43d9b.serverhub.tripleten-services.com?lng=es'
+urban_routes_url = 'https://2baa4eb7-a86d-4ae9-933c-f54030826384.serverhub.tripleten-services.com?lng=es'
 address_from = 'East 2nd Street, 601'
 address_to = '1300 1st St'
 phone_number = '+1 123 123 12 12'
-card_number, card_code = '1234 5678 9100', '123'
+card_number, card_code = '1234 5678 9100', '111'
 message_for_driver = 'Muéstrame el camino'
